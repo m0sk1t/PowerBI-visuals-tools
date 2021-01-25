@@ -43,6 +43,9 @@ for (let i = 0; i < options.length; i++) {
     }
 }
 
+program
+    .option('-f, --file [file]', 'Allow to use custom pbiviz.json file', './pbiviz.json');
+
 program.parse(options);
 
 let args = program.args;

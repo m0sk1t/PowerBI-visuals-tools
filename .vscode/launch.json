@@ -5,6 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "pkg",
+            "program": "${workspaceFolder}/bin/pbiviz-package.js",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/../powerbi-visuals-sankey",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
